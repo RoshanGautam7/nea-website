@@ -1,0 +1,525 @@
+/* Styles for header section */
+header {
+    height: 600px;
+    background-image: url('slider-image.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .navbar-brand img {
+    width: 100%;
+    max-width: 120px;
+  }
+
+  .navbar-nav {
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .navbar-nav li {
+    padding: 0 10px;
+  }
+
+  .navbar-nav li a {
+    color: #fff;
+  }
+  .navbar-nav .dropdown-menu {
+    background-color: transparent;
+    border: none;
+    
+  }
+  .dropdown-item {
+    padding: 4px 4px;
+    padding-bottom: 10px;
+  }
+  
+  .dropdown-item:hover{
+    background-color: transparent;
+    color: #FFF;
+    transform: scale(1.1);
+    transition: transform 0.4s ease-in-out;
+    font-weight: 500;
+    border-radius: 3px;
+  }
+  .navbar-nav .nav-link {
+    border-bottom: 3px solid transparent;
+    transition: border-bottom-color 0.2s ease-in-out;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    border-bottom-color: #fff;
+    color: #fff;
+  }
+  
+#navbarNav .logo {
+  display: none;
+}
+
+  /* Style for the fixed navbar */
+  #navbarNav.fixed {
+    position: fixed;
+    top: 0;
+    left: -26px;
+    width: 110%;
+    background-color: #003870;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease-in-out;
+    z-index: 2;
+
+  }
+ 
+  
+  #navbarNav.fixed .logo {
+    margin-bottom: 70px;
+    margin-left: 100px;
+    height: 7px;
+    width: 70px;
+    display: block;
+  }
+  #navbarNav.fixed .fix-account-login{
+    display: inline;
+  }
+  #navbarNav.fixed .user-text-hidden{
+    display: inline;
+    color: #FFF;
+    position: relative;
+    left: 3px;
+    top: 3px;
+  }
+  #navbarNav.fixed .navbar-nav .dropdown-menu {
+    background-color: #fff;
+    
+  }
+  #navbarNav.fixed .dropdown-menu {
+    top: 40px;
+  }
+  #navbarNav.fixed .navbar-nav a.dropdown-item {
+    color: black;
+    padding: 10px 5px;
+
+  }
+  .navbar-nav li:hover .dropdown-menu {
+    display: block;
+}
+#navbarNav.fixed .navbar-nav .nav-link:hover{
+  background-color: #003870;
+  color: white;
+  
+}
+.circle-outline {
+  color: #FFF;
+  border: 2px solid #FFF;
+  border-radius: 50%;
+}
+.user-text-hidden{
+  display: none;
+}
+
+.fix-account-login{
+  display: none;
+}
+
+.user-text{
+  color: #FFF;
+  position: relative;
+  left: 2.5rem;
+  bottom: 1.7rem;
+}
+.user-content{
+  position: relative;
+  bottom: 1rem;
+  left: 3rem;
+
+}
+  .logo-col {
+    display: flex;
+    align-items: center;
+    width: 10%;
+  }
+  .header-text {
+    margin-top: 20px;
+    color: #fff;
+    text-align: center;
+  }
+  h1{
+    text-align: center;
+    color: #003870;    
+    font-family: 'Poppins'; font-size: 40px;
+   } 
+
+   h3{
+    font-family: 'Poppins'; font-size: 20px;
+    color: #003870;
+    font-weight: bolder;
+   }
+   i{
+    color: #003870;
+   }
+  .fix-account-login{
+    display: none;
+  }
+  
+  /* sticky navbar code  */
+  .social-fix {
+    position: fixed;
+    right: -100px;
+    top: 475px;
+    z-index: 111;
+    box-shadow: 0 0 15px rgba(165, 165, 165, 0.56);
+}
+.social-fix li {
+  background: #fff;
+  padding: 15px 20px;
+  padding-bottom: 15px;
+  transition: .5s all;
+}
+
+.social-fix li {
+  background: #fff;
+  padding: 15px 20px;
+  padding-bottom: 15px;
+  transition: .5s all;
+}
+.social-fix li:hover {
+  transform: translateX(-90px);
+  background: #003870;
+  border-radius: 40px 0 0 40px;
+  transition: .5s all;
+  color: #fff;
+  cursor: pointer;
+  padding: 15px 20px;
+}
+.social-fix li:hover .fa-comment,
+.social-fix li:hover .fa-envelope
+{
+  color: #FFF;
+}
+  
+.fa-comment ,.fa-envelope{
+  font-size: 25px;
+}
+ 
+  
+ 
+
+/* news section edit  */
+
+.news-section {
+  background-color: #f5f5f5;
+  margin-top: 2%;
+  padding: 3% 5%;
+}
+
+ul.news-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.news-list li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.news-date{
+  display: inline-block;
+}
+.news-title{
+  display: inline-block;
+}
+.news-list li a {
+  margin-left: 20px;
+  transform: scale(1.1);
+  transition: transform 1s ease-in-out;
+}
+
+
+.news-list li a:hover {
+  color: #527DA1;
+  font-weight: 500;
+}
+.primary-badge {
+  background-color: #527DA1;
+}
+
+
+.publication{
+  padding-left: 520px;
+  padding-top: 5px;
+  color: #003870;
+  font-weight: 700;
+}
+
+.news-list.hidden {
+  display: none !important;
+}
+.btn-group button {
+  background-color: transparent;
+  color: #000;
+  border-bottom: 3px solid transparent;
+  padding: 6px 15px;
+  border: none;
+  
+  
+}
+
+.btn-group button.active {
+  color: #000;
+  border: none;
+  border-radius: 0;
+  border-bottom: 3px solid #2166AB;
+  
+}
+
+.btn-group button:hover.active {
+  color: #000;
+  border: none;
+  border-bottom: 3px solid #2166AB;
+}
+.btn-group button:hover {
+  border-bottom: 3px solid #2166AB;
+  color: #000;
+}
+.view-button{
+  background-color: #527DA1;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.view-button:hover {
+  background-color: #527DA1;
+  opacity: 0.9;
+  color: white;
+  text-decoration: none;
+}
+.download-button {
+  background-color: white;
+  border: 2px solid #527DA1;
+  color: #003870;
+  border-radius: 5px;
+  padding: 10px 10px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.download-button:hover {
+  background-color: #527DA1;
+  color: white;
+  text-decoration: none;
+  border-color: #527DA1;
+}
+
+
+
+/* carousel css code  */
+.carousel-column{
+  padding: 0px 60px;
+}
+.carousel-control-prev, .carousel-control-next {
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+.carousel-control-next-icon,.carousel-control-prev-icon {
+  
+  background-color: #003870;
+}
+
+
+.carousel-control-prev {
+  left: -70px;
+}
+
+.carousel-control-next {
+  right: -70px;
+}
+
+/*Others contents*/
+.offer{
+  font-weight: bold; 
+  margin-top: 20px;
+  text-transform: uppercase;
+  
+}
+  
+  /* styles for grid items  */
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  .grid-item {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.5s ease;
+    border-radius: 30px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    
+  }
+  
+  .grid-item:hover {
+    transform: scale(1.1);
+    color: black;
+    border: 2px solid #7FB3D5;
+    animation: pulsate-border 1s infinite;
+  }
+  
+  @keyframes pulsate-border {
+    0% {
+      border-color: #2166AB;
+    }
+    50% {
+      border-color: #7FB3D5;
+    }
+    100% {
+      border-color: #2166AB;
+    }
+  }
+  
+  #grid-container{
+    background-color: #f5f5f5;
+  }
+
+  /* image section  */
+  .img-mobile img {
+    display: block;
+    max-width: 100%;
+    max-height: 860px; /* set the maximum height to 500px or any value you prefer */
+  }
+  
+  .img-mobile {
+    position: relative;
+  }
+  
+  .download-buttons .ios-button {
+    position: absolute;
+    top: 77%;
+    left: 9%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background-color: #007aff;
+    color: white;
+    padding: 7px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  .download-buttons .android-button {
+    position: absolute;
+    top: 70%;
+    left: 9%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background-color: #3cb371;
+    color: white;
+    padding: 7px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  /* footer section  */
+  .map-container {
+    position: relative;
+    right: 20px;
+    padding-bottom: 40%;
+    padding-top: 20%;
+    height: 0;
+    overflow: hidden;
+    margin-left: -30px;
+  }
+
+  .map-container iframe {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .list-unstyled li{
+    line-height: 20px;
+  }
+  .list-unstyled li a:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out;
+    font-weight: 600;
+
+  }
+ .fa-facebook:hover,
+ .fa-twitter:hover,
+ .fa-instagram:hover {
+    transform: scale(1.1);
+    color: rgb(255, 255, 255);
+    animation: bounce 1.5s ease-in-out;
+
+  }
+  @keyframes bounce {
+   0%,
+   20%,
+   60%,
+   100%{
+    transform: translateY(0);
+   }40%{
+    transform: translateY(-10px);
+   }80%{
+    transform: translateY(-10px);
+   }
+
+
+  }
+h5{
+    color: #fff;
+    font-weight: 600;
+}
+
+/* button to go to the top of the page  */
+#myBtn {
+  display: none; /* Hide the button by default */
+  position: fixed; /* Fixed position */
+  bottom: 20px; /* Position the button 20px from the bottom */
+  right: 30px; /* Position the button 30px from the right */
+  z-index: 99; /* Make sure the button appears on top of other elements */
+  border: none; /* Remove the border */
+  outline: none; /* Remove the outline */
+  background-color: #003870; /* Set a background color */
+  cursor: pointer; /* Add a cursor on hover */
+  padding: 10px; /* Add some padding */
+  border-radius: 10px; /* Add rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #333; /* Darken the background on hover */
+}
+
+  @media (max-width: 900px) {
+    #navbarNav.fixed {
+      position: static;
+      top: auto;
+      left: auto;
+      width: 100%;
+      background-color: transparent;
+      padding: 0;
+      box-shadow: none;
+      transition: none;
+    }
+    #navbarNav.fixed .logo {
+      display: none;
+    }
+    .image{
+      margin-left: 500px;
+    }
+    .table-container {
+      display: none;
+    }
+    .map-container {
+      width: 70%;
+      float: left;
+      margin-right: 30px;
+    }
+  }
+
+  
+  
